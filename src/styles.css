@@ -121,3 +121,19 @@ p {
 .hourly-weather h6 {
   font-size: 15px;
 }
+
+footer {
+  color: darkgrey;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
