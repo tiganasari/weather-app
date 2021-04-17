@@ -55,7 +55,7 @@ function submitCity(event) {
 let form = document.querySelector("form");
 form.addEventListener("submit", submitCity);
 
-search("Surabaya");
+search("London");
 
 // ====
 
