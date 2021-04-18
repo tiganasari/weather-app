@@ -23,7 +23,9 @@ let todayTime = document.querySelector("h2");
 todayTime.innerHTML = today;
 
 function displayTemperature(response) {
-  document.querySelector("#city-search").innerHTML = response.data.name;
+ 
+
+    document.querySelector("#city-search").innerHTML = response.data.name;
   document.querySelector("#showTemperature").innerHTML = `${Math.round(
     response.data.main.temp
   )}°C`;
@@ -39,7 +41,6 @@ function displayTemperature(response) {
   document.querySelector(
     "#humidity"
   ).innerHTML = `${response.data.main.humidity}%`;
-  console.log(response.data);
 }
 
 function search(city) {
@@ -57,7 +58,6 @@ form.addEventListener("submit", submitCity);
 
 search("London");
 
-// ====
 
 function showCurrentCity(event) {
   event.preventDefault();
